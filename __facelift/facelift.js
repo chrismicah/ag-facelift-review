@@ -751,6 +751,64 @@
     document.head.append(schema);
   };
 
+  const injectHomeFaqFeature = () => {
+    if (config.key !== 'home' || document.querySelector('.agfx-home-faq')) return;
+
+    const featuredQuestions = [
+      'How does it support OSHA and NFPA 70E programs?',
+      'Does it replace PPE or safety procedures?',
+      'How does it improve safety?'
+    ];
+    const featured = FAQS.filter(item => featuredQuestions.includes(item.question));
+    if (!featured.length) return;
+
+    const section = document.createElement('section');
+    section.className = 'agfx-home-faq agfx-reveal';
+    section.dataset.agfxInjected = 'home-faq-feature';
+    section.setAttribute('aria-labelledby', 'agfx-home-faq-title');
+    section.innerHTML = `
+      <div class="agfx-home-faq__inner">
+        <header class="agfx-home-faq__head">
+          <p class="agfx-section-label">Compliance self-check</p>
+          <h2 id="agfx-home-faq-title">Where Does Your Hot-Work Program Stand?</h2>
+          <p>These are the connector-level questions safety teams and inspectors ask — exposed energized ends, unintended separation, dropped-object risk, and where a physical safeguard fits in your hierarchy of controls.</p>
+        </header>
+        <div class="agfx-home-faq__list">${featured
+          .map(
+            (item, index) => `
+          <details${index === 0 ? ' open' : ''}>
+            <summary>${item.question}</summary>
+            <p>${item.answer}</p>
+          </details>`
+          )
+          .join('')}</div>
+        <div class="agfx-actions agfx-home-faq__actions">
+          <a class="agfx-button" href="/products/#arcguard-faq">See the Full FAQ</a>
+          <a class="agfx-button agfx-button--secondary" href="/contact/">Request a Site Walkthrough</a>
+        </div>
+      </div>`;
+
+    const problemHeading = [...document.querySelectorAll('h2, h3, h4')].find(heading =>
+      /THE PROBLEM/i.test(heading.textContent)
+    );
+    const problemSection = problemHeading?.closest(
+      '.elementor > .e-con, .elementor > .elementor-section'
+    );
+    if (problemSection) {
+      const cardsSection = problemSection.nextElementSibling;
+      const anchor =
+        cardsSection && /Dropped Object|Costly Shutdowns|Unintentional Arcs/i.test(cardsSection.textContent)
+          ? cardsSection
+          : problemSection;
+      anchor.after(section);
+    } else {
+      const carousel = document.querySelector('.elementor-element-2f132f4');
+      const root = document.querySelector('.elementor-14043, main, #content') || document.body;
+      if (carousel) carousel.closest('.elementor > .e-con, .elementor > .elementor-section')?.before(section);
+      if (!section.isConnected) root.append(section);
+    }
+  };
+
   const injectResourceBridge = () => {
     if (config.key !== 'resources' || document.querySelector('.agfx-resource-bridge')) return;
     const section = document.createElement('section');
@@ -963,6 +1021,7 @@
   improveLinksAndActions();
   addProductDocumentState();
   injectFaq();
+  injectHomeFaqFeature();
   injectResourceBridge();
   addRevealMotion(intro);
   addMagnetMotion();

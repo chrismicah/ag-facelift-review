@@ -1418,3 +1418,101 @@ body.agfx-facelift .agfx-reveal {
     transform: none !important;
   }
 }
+
+/* Home compliance FAQ feature — dark band matching the industrial structure. */
+body.agfx-facelift .agfx-home-faq {
+  background: var(--agfx-charcoal);
+  color: var(--agfx-cream);
+  border-top: 4px solid var(--agfx-red);
+}
+
+body.agfx-facelift .agfx-home-faq__inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 4.5rem) clamp(1.25rem, 4vw, 2rem);
+}
+
+body.agfx-facelift .agfx-home-faq__head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body.agfx-facelift .agfx-home-faq__head h2 {
+  color: var(--agfx-cream) !important;
+  margin: 0.5rem 0 0.85rem;
+}
+
+body.agfx-facelift .agfx-home-faq__head p:last-child {
+  max-width: 62ch;
+  margin: 0 auto;
+  color: var(--agfx-mist);
+  line-height: 1.6;
+}
+
+body.agfx-facelift .agfx-home-faq details {
+  border-top: 1px solid rgba(244, 239, 229, 0.22);
+}
+
+body.agfx-facelift .agfx-home-faq details:last-of-type {
+  border-bottom: 1px solid rgba(244, 239, 229, 0.22);
+}
+
+body.agfx-facelift .agfx-home-faq summary {
+  min-height: 60px;
+  padding: 1.15rem 3rem 1.15rem 0;
+  color: var(--agfx-cream);
+  cursor: pointer;
+  font-size: clamp(1.05rem, 1.1vw, 1.25rem);
+  font-weight: 720;
+  line-height: 1.35;
+}
+
+body.agfx-facelift .agfx-home-faq details p {
+  max-width: 72ch;
+  margin: 0;
+  padding: 0 2rem 1.4rem 0;
+  color: var(--agfx-mist);
+  line-height: 1.6;
+}
+
+body.agfx-facelift .agfx-home-faq__actions {
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Centering fixes: the product document buttons and FAQ review callout
+   squished side-by-side at tablet widths. Stack and center them below 1024px. */
+@media (max-width: 1024px) {
+  body.agfx-facelift.agfx-page-product .elementor-element-6d3a201 {
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+  }
+
+  body.agfx-facelift.agfx-page-product .elementor-element-6d3a201 :where(.elementor-button, .roll-button) {
+    width: min(100%, 420px);
+    text-align: center;
+  }
+
+  body.agfx-facelift .agfx-faq-review-action {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  body.agfx-facelift .agfx-faq-review-action p {
+    max-width: 52ch;
+  }
+
+  body.agfx-facelift .agfx-faq-review-action .agfx-button {
+    width: min(100%, 420px);
+    text-align: center;
+  }
+
+  body.agfx-facelift .agfx-media-caption {
+    text-align: center;
+  }
+
+  body.agfx-facelift .agfx-document-note {
+    text-align: center;
+  }
+}
