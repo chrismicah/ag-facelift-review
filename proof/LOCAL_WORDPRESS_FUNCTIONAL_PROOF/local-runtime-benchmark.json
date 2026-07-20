@@ -1,0 +1,519 @@
+{
+  "label": "Fixture-only local benchmark — not a substitute for the real Bluehost staging gate",
+  "method": "Chromium cache disabled; three document-only navigations per Current cached source and authenticated Release preview for all six IDs; all subresources blocked to remove the one-worker Playground asset queue; medians compare TTFB and loadEventEnd document time.",
+  "samples": [
+    {
+      "page": "home",
+      "sourceId": 14043,
+      "kind": "source",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1360.6,
+      "documentMs": 1608.4,
+      "responseBytes": 103963,
+      "transferBytes": 104263
+    },
+    {
+      "page": "home",
+      "sourceId": 14043,
+      "kind": "source",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 2166.2,
+      "documentMs": 2301.2,
+      "responseBytes": 103963,
+      "transferBytes": 104263
+    },
+    {
+      "page": "home",
+      "sourceId": 14043,
+      "kind": "source",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 1149.5,
+      "documentMs": 1273.5,
+      "responseBytes": 103963,
+      "transferBytes": 104263
+    },
+    {
+      "page": "home",
+      "sourceId": 14043,
+      "kind": "release",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1219.6,
+      "documentMs": 1336.4,
+      "responseBytes": 108443,
+      "transferBytes": 108743
+    },
+    {
+      "page": "home",
+      "sourceId": 14043,
+      "kind": "release",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 1252.9,
+      "documentMs": 1400,
+      "responseBytes": 108443,
+      "transferBytes": 108743
+    },
+    {
+      "page": "home",
+      "sourceId": 14043,
+      "kind": "release",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 1298.1,
+      "documentMs": 1436.9,
+      "responseBytes": 108443,
+      "transferBytes": 108743
+    },
+    {
+      "page": "product",
+      "sourceId": 401,
+      "kind": "source",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1199,
+      "documentMs": 2181.9,
+      "responseBytes": 88747,
+      "transferBytes": 89047
+    },
+    {
+      "page": "product",
+      "sourceId": 401,
+      "kind": "source",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 1746,
+      "documentMs": 1987.3,
+      "responseBytes": 88747,
+      "transferBytes": 89047
+    },
+    {
+      "page": "product",
+      "sourceId": 401,
+      "kind": "source",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 1095,
+      "documentMs": 1353.4,
+      "responseBytes": 88747,
+      "transferBytes": 89047
+    },
+    {
+      "page": "product",
+      "sourceId": 401,
+      "kind": "release",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1528.4,
+      "documentMs": 1972.3,
+      "responseBytes": 101437,
+      "transferBytes": 101737
+    },
+    {
+      "page": "product",
+      "sourceId": 401,
+      "kind": "release",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 1302.8,
+      "documentMs": 1571.7,
+      "responseBytes": 101437,
+      "transferBytes": 101737
+    },
+    {
+      "page": "product",
+      "sourceId": 401,
+      "kind": "release",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 1185.6,
+      "documentMs": 1562.9,
+      "responseBytes": 101437,
+      "transferBytes": 101737
+    },
+    {
+      "page": "industries",
+      "sourceId": 556,
+      "kind": "source",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1235.8,
+      "documentMs": 1432.9,
+      "responseBytes": 99148,
+      "transferBytes": 99448
+    },
+    {
+      "page": "industries",
+      "sourceId": 556,
+      "kind": "source",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 1311.5,
+      "documentMs": 1489.2,
+      "responseBytes": 99148,
+      "transferBytes": 99448
+    },
+    {
+      "page": "industries",
+      "sourceId": 556,
+      "kind": "source",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 1359,
+      "documentMs": 1510.8,
+      "responseBytes": 99148,
+      "transferBytes": 99448
+    },
+    {
+      "page": "industries",
+      "sourceId": 556,
+      "kind": "release",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1040.7,
+      "documentMs": 1174.5,
+      "responseBytes": 103616,
+      "transferBytes": 103916
+    },
+    {
+      "page": "industries",
+      "sourceId": 556,
+      "kind": "release",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 1322.1,
+      "documentMs": 1445.2,
+      "responseBytes": 103616,
+      "transferBytes": 103916
+    },
+    {
+      "page": "industries",
+      "sourceId": 556,
+      "kind": "release",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 1187.8,
+      "documentMs": 1316.7,
+      "responseBytes": 103616,
+      "transferBytes": 103916
+    },
+    {
+      "page": "resources",
+      "sourceId": 14044,
+      "kind": "source",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1109.3,
+      "documentMs": 1222.1,
+      "responseBytes": 76145,
+      "transferBytes": 76445
+    },
+    {
+      "page": "resources",
+      "sourceId": 14044,
+      "kind": "source",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 982.4,
+      "documentMs": 1092.1,
+      "responseBytes": 76145,
+      "transferBytes": 76445
+    },
+    {
+      "page": "resources",
+      "sourceId": 14044,
+      "kind": "source",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 988.9,
+      "documentMs": 1104.5,
+      "responseBytes": 76145,
+      "transferBytes": 76445
+    },
+    {
+      "page": "resources",
+      "sourceId": 14044,
+      "kind": "release",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1086.4,
+      "documentMs": 1210.1,
+      "responseBytes": 80580,
+      "transferBytes": 80880
+    },
+    {
+      "page": "resources",
+      "sourceId": 14044,
+      "kind": "release",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 1226.6,
+      "documentMs": 1345.3,
+      "responseBytes": 80580,
+      "transferBytes": 80880
+    },
+    {
+      "page": "resources",
+      "sourceId": 14044,
+      "kind": "release",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 1512.6,
+      "documentMs": 1818,
+      "responseBytes": 80580,
+      "transferBytes": 80880
+    },
+    {
+      "page": "about",
+      "sourceId": 14346,
+      "kind": "source",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1235.6,
+      "documentMs": 1512.3,
+      "responseBytes": 83125,
+      "transferBytes": 83425
+    },
+    {
+      "page": "about",
+      "sourceId": 14346,
+      "kind": "source",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 2227.2,
+      "documentMs": 2484.2,
+      "responseBytes": 83125,
+      "transferBytes": 83425
+    },
+    {
+      "page": "about",
+      "sourceId": 14346,
+      "kind": "source",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 1040.2,
+      "documentMs": 1224.3,
+      "responseBytes": 83125,
+      "transferBytes": 83425
+    },
+    {
+      "page": "about",
+      "sourceId": 14346,
+      "kind": "release",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1268,
+      "documentMs": 1441.6,
+      "responseBytes": 87582,
+      "transferBytes": 87882
+    },
+    {
+      "page": "about",
+      "sourceId": 14346,
+      "kind": "release",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 1354.2,
+      "documentMs": 1504,
+      "responseBytes": 87582,
+      "transferBytes": 87882
+    },
+    {
+      "page": "about",
+      "sourceId": 14346,
+      "kind": "release",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 1189.3,
+      "documentMs": 1304.4,
+      "responseBytes": 87582,
+      "transferBytes": 87882
+    },
+    {
+      "page": "contact",
+      "sourceId": 553,
+      "kind": "source",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1119.5,
+      "documentMs": 1593.6,
+      "responseBytes": 83399,
+      "transferBytes": 83699
+    },
+    {
+      "page": "contact",
+      "sourceId": 553,
+      "kind": "source",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 1017.3,
+      "documentMs": 1359.6,
+      "responseBytes": 83399,
+      "transferBytes": 83699
+    },
+    {
+      "page": "contact",
+      "sourceId": 553,
+      "kind": "source",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 906.9,
+      "documentMs": 1375.8,
+      "responseBytes": 83399,
+      "transferBytes": 83699
+    },
+    {
+      "page": "contact",
+      "sourceId": 553,
+      "kind": "release",
+      "run": 1,
+      "status": 200,
+      "ttfbMs": 1053,
+      "documentMs": 1481.6,
+      "responseBytes": 87769,
+      "transferBytes": 88069
+    },
+    {
+      "page": "contact",
+      "sourceId": 553,
+      "kind": "release",
+      "run": 2,
+      "status": 200,
+      "ttfbMs": 1159.8,
+      "documentMs": 1569.1,
+      "responseBytes": 87769,
+      "transferBytes": 88069
+    },
+    {
+      "page": "contact",
+      "sourceId": 553,
+      "kind": "release",
+      "run": 3,
+      "status": 200,
+      "ttfbMs": 1039.7,
+      "documentMs": 1457.8,
+      "responseBytes": 87769,
+      "transferBytes": 88069
+    }
+  ],
+  "report": [
+    {
+      "page": "home",
+      "sourceId": 14043,
+      "sourceTtfbMs": 1360.6,
+      "releaseTtfbMs": 1252.9,
+      "ttfbDeltaMs": -107.7,
+      "sourceDocumentMs": 1608.4,
+      "releaseDocumentMs": 1400,
+      "documentDeltaMs": -208.4,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "provisionalPass": true
+    },
+    {
+      "page": "product",
+      "sourceId": 401,
+      "sourceTtfbMs": 1199,
+      "releaseTtfbMs": 1302.8,
+      "ttfbDeltaMs": 103.8,
+      "sourceDocumentMs": 1987.3,
+      "releaseDocumentMs": 1571.7,
+      "documentDeltaMs": -415.6,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "provisionalPass": true
+    },
+    {
+      "page": "industries",
+      "sourceId": 556,
+      "sourceTtfbMs": 1311.5,
+      "releaseTtfbMs": 1187.8,
+      "ttfbDeltaMs": -123.7,
+      "sourceDocumentMs": 1489.2,
+      "releaseDocumentMs": 1316.7,
+      "documentDeltaMs": -172.5,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "provisionalPass": true
+    },
+    {
+      "page": "resources",
+      "sourceId": 14044,
+      "sourceTtfbMs": 988.9,
+      "releaseTtfbMs": 1226.6,
+      "ttfbDeltaMs": 237.7,
+      "sourceDocumentMs": 1104.5,
+      "releaseDocumentMs": 1345.3,
+      "documentDeltaMs": 240.8,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "provisionalPass": true
+    },
+    {
+      "page": "about",
+      "sourceId": 14346,
+      "sourceTtfbMs": 1235.6,
+      "releaseTtfbMs": 1268,
+      "ttfbDeltaMs": 32.4,
+      "sourceDocumentMs": 1512.3,
+      "releaseDocumentMs": 1441.6,
+      "documentDeltaMs": -70.7,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "provisionalPass": true
+    },
+    {
+      "page": "contact",
+      "sourceId": 553,
+      "sourceTtfbMs": 1017.3,
+      "releaseTtfbMs": 1053,
+      "ttfbDeltaMs": 35.7,
+      "sourceDocumentMs": 1375.8,
+      "releaseDocumentMs": 1481.6,
+      "documentDeltaMs": 105.8,
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "provisionalPass": true
+    }
+  ],
+  "passed": true
+}

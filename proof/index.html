@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Arc Guard — Current vs Enhanced Visual Proof</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #171b20;
+      --muted: #60676e;
+      --cream: #f5efe2;
+      --paper: #fffdf8;
+      --line: #d8d0c1;
+      --red: #b42318;
+      --green: #176b33;
+      --gold: #d9a928;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: inherit; }
+    .shell { width: min(1500px, calc(100% - 32px)); margin: 24px auto 64px; }
+    .hero { position: relative; overflow: hidden; padding: clamp(26px,5vw,64px); background: var(--ink); color: #fff; border-top: 8px solid var(--red); }
+    .hero::after { content: ""; position: absolute; width: 320px; height: 320px; right: -100px; top: -160px; border: 50px solid rgba(217,169,40,.18); border-radius: 50%; }
+    .kicker { margin: 0 0 10px; color: #f0c34e; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+    h1 { max-width: 900px; margin: 0; font-size: clamp(34px,5vw,68px); line-height: .98; letter-spacing: -.045em; }
+    .hero p { max-width: 880px; margin: 20px 0 0; color: #e8e1d4; font-size: 18px; }
+    .scoreboard { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; margin: 18px 0; }
+    .score { padding: 19px; background: var(--paper); border: 1px solid var(--line); }
+    .score strong { display: block; font-size: 31px; line-height: 1; }
+    .score span { color: var(--muted); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+    .score.good { border-top: 5px solid var(--green); }
+    .score.note { border-top: 5px solid var(--gold); }
+    .truth { margin: 18px 0; padding: 18px 20px; background: #fff8df; border-left: 5px solid var(--gold); }
+    .truth strong { display: block; margin-bottom: 4px; }
+    .toolbar { position: sticky; top: 0; z-index: 3; display: flex; flex-wrap: wrap; gap: 9px; align-items: center; margin: 24px 0 14px; padding: 12px; background: rgba(245,239,226,.96); backdrop-filter: blur(12px); border: 1px solid var(--line); }
+    button, .button { min-height: 44px; padding: 10px 15px; border: 1px solid var(--ink); background: var(--paper); color: var(--ink); font: inherit; font-weight: 800; cursor: pointer; text-decoration: none; }
+    button[aria-pressed="true"], .button.primary { background: var(--ink); color: #fff; }
+    .proof { display: none; padding: 16px; background: var(--paper); border: 1px solid var(--line); }
+    .proof.active { display: block; }
+    .proof h2, .section h2 { margin: 0 0 7px; font-size: clamp(24px,3vw,38px); letter-spacing: -.025em; }
+    .proof > p, .section > p { margin-top: 0; color: var(--muted); }
+    .proof img { display: block; width: 100%; height: auto; border: 1px solid #bfc2c4; background: #fff; }
+    .section { margin-top: 30px; }
+    .renders { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+    .render-card { padding: 16px; background: var(--paper); border: 1px solid var(--line); }
+    .render-card h3 { margin: 0 0 10px; }
+    .links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .links a { display: block; padding: 10px; border: 1px solid var(--line); background: #fff; text-align: center; text-decoration: none; font-size: 14px; font-weight: 800; }
+    .links a:last-child { background: var(--ink); color: #fff; border-color: var(--ink); }
+    .focused { display: grid; grid-template-columns: minmax(0,440px) minmax(0,1fr); gap: 14px; }
+    figure { margin: 0; padding: 14px; background: var(--paper); border: 1px solid var(--line); }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption { margin-top: 10px; color: var(--muted); }
+    .pass { color: var(--green); font-weight: 800; }
+    footer { margin-top: 30px; padding: 20px; background: var(--ink); color: #eee7da; }
+    @media (max-width: 900px) { .scoreboard, .renders { grid-template-columns: repeat(2,minmax(0,1fr)); } .focused { grid-template-columns: 1fr; } }
+    @media (max-width: 560px) { .shell { width: min(100% - 16px,1500px); margin-top: 8px; } .scoreboard, .renders { grid-template-columns: 1fr; } .links { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="kicker">Arc Guard · approval proof</p>
+      <h1>Same site. Preserved media. Focused facelift.</h1>
+      <p>This offline review index opens by double-click. It shows the current public rendering and the enhanced rendering of the same six routes at desktop and mobile sizes—without logging in, running Node, or changing WordPress.</p>
+    </header>
+
+    <section class="scoreboard" aria-label="QA summary">
+      <div class="score good"><strong>12/12</strong><span>Enhanced renders passed</span></div>
+      <div class="score good"><strong>0</strong><span>Enhanced overflow failures</span></div>
+      <div class="score good"><strong>0</strong><span>Broken enhanced images</span></div>
+      <div class="score note"><strong>6</strong><span>Pages · desktop + mobile</span></div>
+    </section>
+
+    <aside class="truth">
+      <strong>What this proves</strong>
+      Both columns were captured from the same read-only local rendering of the current public ArcGuardInc.com HTML, navigation, images, videos, and embeds. “Current” adds nothing. “Enhanced” adds only the staged facelift layer. The three failed current-public checks are existing overflow defects; all twelve enhanced checks pass. This visual proof is separate from the disposable local WordPress functional sandbox.
+    </aside>
+
+    <nav class="toolbar" aria-label="Choose a proof sheet">
+      <button type="button" data-proof="desktop" aria-pressed="true">Desktop proof</button>
+      <button type="button" data-proof="mobile" aria-pressed="false">Mobile proof</button>
+      <a class="button" href="CURRENT_VS_ENHANCED/qa-results.json" target="_blank">Open machine QA</a>
+      <a class="button primary" href="../">Open the clickable enhanced site</a>
+    </nav>
+
+    <section class="proof active" id="proof-desktop">
+      <h2>Desktop · current versus enhanced</h2>
+      <p>Every row is one route. Left is Current; right is Enhanced. Click the image to open it full-size.</p>
+      <a href="CURRENT_VS_ENHANCED/contact-sheet-desktop.png" target="_blank"><img src="CURRENT_VS_ENHANCED/contact-sheet-desktop.png" alt="Desktop contact sheet comparing six current and enhanced Arc Guard pages"></a>
+    </section>
+
+    <section class="proof" id="proof-mobile">
+      <h2>Mobile · current versus enhanced</h2>
+      <p>The same six routes at 390 × 844. Click the image to open it full-size.</p>
+      <a href="CURRENT_VS_ENHANCED/contact-sheet-mobile.png" target="_blank"><img src="CURRENT_VS_ENHANCED/contact-sheet-mobile.png" alt="Mobile contact sheet comparing six current and enhanced Arc Guard pages"></a>
+    </section>
+
+    <section class="section">
+      <h2>Open any individual render</h2>
+      <p>Use the viewport buttons above, then choose Current or Enhanced below.</p>
+      <div class="renders" id="render-links"></div>
+    </section>
+
+    <section class="section">
+      <h2>Preserved media · loaded proof</h2>
+      <p>The full-page captures can catch a cross-origin embed before its pixels paint. These focused captures prove the preserved live embeds loaded and remained visible.</p>
+      <div class="focused">
+        <figure>
+          <a href="CURRENT_VS_ENHANCED/focused/product-vimeo-loaded.png" target="_blank"><img src="CURRENT_VS_ENHANCED/focused/product-vimeo-loaded.png" alt="Loaded Arc Guard Assembly Vimeo player"></a>
+          <figcaption><span class="pass">Pass:</span> Product Vimeo visible, centered, 439 × 247; assembly media preserved.</figcaption>
+        </figure>
+        <figure>
+          <a href="CURRENT_VS_ENHANCED/focused/contact-google-map-loaded.png" target="_blank"><img src="CURRENT_VS_ENHANCED/focused/contact-google-map-loaded.png" alt="Loaded Google map for Arc Guard Baton Rouge address"></a>
+          <figcaption><span class="pass">Pass:</span> Contact Google map visible, loaded, 1420 × 420; address marker preserved.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      No production mutation occurred. Use the separate local WordPress sandbox to test the plugin workflow. Use Bluehost staging only after confirming the dashboard says “Staging Environment” and the URL begins with <strong>https://www.arcguardinc.com/staging/5011/</strong>.
+    </footer>
+  </main>
+  <script>
+    const routes = [
+      ['Home','home'], ['Product','product'], ['Industries','industries'],
+      ['Resources','resources'], ['About','about'], ['Contact','contact']
+    ];
+    let viewport = 'desktop';
+    const renderLinks = document.querySelector('#render-links');
+    function drawLinks() {
+      renderLinks.innerHTML = routes.map(([label,key]) => `
+        <article class="render-card">
+          <h3>${label}</h3>
+          <div class="links">
+            <a target="_blank" href="CURRENT_VS_ENHANCED/${key}-current-${viewport}.png">Current · ${viewport}</a>
+            <a target="_blank" href="CURRENT_VS_ENHANCED/${key}-enhanced-${viewport}.png">Enhanced · ${viewport}</a>
+          </div>
+        </article>`).join('');
+    }
+    document.querySelector('.toolbar').addEventListener('click', event => {
+      const button = event.target.closest('button[data-proof]');
+      if (!button) return;
+      viewport = button.dataset.proof;
+      document.querySelectorAll('button[data-proof]').forEach(item => item.setAttribute('aria-pressed', item === button ? 'true' : 'false'));
+      document.querySelectorAll('.proof').forEach(item => item.classList.toggle('active', item.id === `proof-${viewport}`));
+      drawLinks();
+    });
+    drawLinks();
+  </script>
+</body>
+</html>

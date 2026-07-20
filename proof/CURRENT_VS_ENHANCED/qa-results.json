@@ -1,0 +1,1750 @@
+{
+  "generatedAt": "2026-07-20T22:23:13.437Z",
+  "baseUrl": "http://127.0.0.1:8770",
+  "truthBoundary": "Pixel-faithful visual proof: both Current and Enhanced are read-only 127.0.0.1:8770 renders of the same current public Arc Guard HTML, theme, navigation, assets, media, and embeds. Current uses ?view=original; Enhanced uses ?view=enhanced and adds only the local facelift layer. No request can write to WordPress.",
+  "total": 24,
+  "passed": 21,
+  "failed": 3,
+  "currentGate": {
+    "total": 12,
+    "passed": 9,
+    "failed": 3
+  },
+  "enhancedGate": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0
+  },
+  "results": [
+    {
+      "page": "home",
+      "variant": "current",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "home-current-desktop.png",
+      "metrics": {
+        "title": "Arc Guard™ arc flash safety device for welding connectorsHome - Arc Guard Inc.",
+        "finalUrl": "http://127.0.0.1:8770/?view=original",
+        "h1": [],
+        "h1Count": 0,
+        "visibleH1Count": 0,
+        "expectedH1": "A Patented Safety Retrofit for Welding Lead Connectors",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 6,
+        "visibleMedia": 6,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "home",
+      "variant": "enhanced",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "home-enhanced-desktop.png",
+      "metrics": {
+        "title": "Welding Connector Safety Device | Arc Guard™",
+        "finalUrl": "http://127.0.0.1:8770/?view=enhanced",
+        "h1": [
+          "A Patented Safety Retrofit for Welding Lead Connectors"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "A Patented Safety Retrofit for Welding Lead Connectors",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 6,
+        "visibleMedia": 6,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "home",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": null,
+          "productFaqPlacement": null,
+          "productCorrectedFaqAction": null,
+          "homeCarouselState": "empty-collapsed",
+          "homeEmptyCarouselCollapsed": true,
+          "resourceImagePresentation": null,
+          "sourceMediaCount": 10,
+          "finalMediaCount": 10,
+          "sourceDocumentCount": 0,
+          "finalDocumentCount": 0,
+          "introTextFits": true
+        },
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+      ],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "product",
+      "variant": "current",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "product-current-desktop.png",
+      "metrics": {
+        "title": "Spring-Assisted Safety Cap for Welding Connectors | Arc Guard",
+        "finalUrl": "http://127.0.0.1:8770/products/?view=original",
+        "h1": [],
+        "h1Count": 0,
+        "visibleH1Count": 0,
+        "expectedH1": "Lock and Cover Welding Lead Connections with One Retrofit",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 4,
+        "visibleMedia": 4,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "product",
+      "variant": "enhanced",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "product-enhanced-desktop.png",
+      "metrics": {
+        "title": "Welding Lead Locking Sleeve & Connector Cover | Arc Guard™",
+        "finalUrl": "http://127.0.0.1:8770/products/?view=enhanced",
+        "h1": [
+          "Lock and Cover Welding Lead Connections with One Retrofit"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Lock and Cover Welding Lead Connections with One Retrofit",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 4,
+        "visibleMedia": 4,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "product",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": true,
+          "productFaqPlacement": true,
+          "productCorrectedFaqAction": true,
+          "homeCarouselState": null,
+          "homeEmptyCarouselCollapsed": null,
+          "resourceImagePresentation": null,
+          "sourceMediaCount": 7,
+          "finalMediaCount": 7,
+          "sourceDocumentCount": 2,
+          "finalDocumentCount": 2,
+          "introTextFits": true
+        },
+        "productChecks": {
+          "faqItems": 8,
+          "exactInstallationAnswer": true,
+          "removedCertifiedQuestion": true,
+          "removedArcFlashQuestion": true,
+          "removedDatasheetSentence": true,
+          "patentedLanguage": true,
+          "noPatentPending": true,
+          "prominentPatentEyebrow": true,
+          "prominentPatentHeroCopy": true
+        },
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "industries",
+      "variant": "current",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "industries-current-desktop.png",
+      "metrics": {
+        "title": "Welding Safety Solutions by Industry - Arc Guard Inc.",
+        "finalUrl": "http://127.0.0.1:8770/welding-safety-solutions-by-industries/?view=original",
+        "h1": [],
+        "h1Count": 0,
+        "visibleH1Count": 0,
+        "expectedH1": "Welding Connector Risk Controls by Industry",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 7,
+        "visibleMedia": 7,
+        "brokenImages": [],
+        "horizontalOverflow": true,
+        "overflowPixels": 2,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": false,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": false
+    },
+    {
+      "page": "industries",
+      "variant": "enhanced",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "industries-enhanced-desktop.png",
+      "metrics": {
+        "title": "Industrial Welding Safety Applications | Arc Guard™",
+        "finalUrl": "http://127.0.0.1:8770/welding-safety-solutions-by-industries/?view=enhanced",
+        "h1": [
+          "Welding Connector Risk Controls by Industry"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Welding Connector Risk Controls by Industry",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 7,
+        "visibleMedia": 7,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "industries",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": null,
+          "productFaqPlacement": null,
+          "productCorrectedFaqAction": null,
+          "homeCarouselState": null,
+          "homeEmptyCarouselCollapsed": null,
+          "resourceImagePresentation": null,
+          "sourceMediaCount": 10,
+          "finalMediaCount": 10,
+          "sourceDocumentCount": 0,
+          "finalDocumentCount": 0,
+          "introTextFits": true
+        },
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "resources",
+      "variant": "current",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "resources-current-desktop.png",
+      "metrics": {
+        "title": "Resources - Arc Guard Inc.",
+        "finalUrl": "http://127.0.0.1:8770/resources/?view=original",
+        "h1": [],
+        "h1Count": 0,
+        "visibleH1Count": 0,
+        "expectedH1": "Welding Connector Safety Resources",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 3,
+        "visibleMedia": 3,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "resources",
+      "variant": "enhanced",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "resources-enhanced-desktop.png",
+      "metrics": {
+        "title": "Welding Connector Safety Resources | Arc Guard™",
+        "finalUrl": "http://127.0.0.1:8770/resources/?view=enhanced",
+        "h1": [
+          "Welding Connector Safety Resources"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Welding Connector Safety Resources",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 3,
+        "visibleMedia": 3,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "resources",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": null,
+          "productFaqPlacement": null,
+          "productCorrectedFaqAction": null,
+          "homeCarouselState": null,
+          "homeEmptyCarouselCollapsed": null,
+          "resourceImagePresentation": true,
+          "sourceMediaCount": 6,
+          "finalMediaCount": 6,
+          "sourceDocumentCount": 0,
+          "finalDocumentCount": 0,
+          "introTextFits": true
+        },
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "about",
+      "variant": "current",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "about-current-desktop.png",
+      "metrics": {
+        "title": "Veteran-Owned Safety Company | Arc Guard Inc.",
+        "finalUrl": "http://127.0.0.1:8770/about/?view=original",
+        "h1": [
+          "About"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Built from Front-Line Welding Experience",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 4,
+        "visibleMedia": 4,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "about",
+      "variant": "enhanced",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "about-enhanced-desktop.png",
+      "metrics": {
+        "title": "About Arc Guard™ | Welding Connector Safety Innovation",
+        "finalUrl": "http://127.0.0.1:8770/about/?view=enhanced",
+        "h1": [
+          "Built from Front-Line Welding Experience"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Built from Front-Line Welding Experience",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 4,
+        "visibleMedia": 4,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "about",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": null,
+          "productFaqPlacement": null,
+          "productCorrectedFaqAction": null,
+          "homeCarouselState": null,
+          "homeEmptyCarouselCollapsed": null,
+          "resourceImagePresentation": null,
+          "sourceMediaCount": 7,
+          "finalMediaCount": 7,
+          "sourceDocumentCount": 0,
+          "finalDocumentCount": 0,
+          "introTextFits": true
+        },
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "contact",
+      "variant": "current",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "contact-current-desktop.png",
+      "metrics": {
+        "title": "Welding Safety Assessment | Contact Arc Guard Inc.",
+        "finalUrl": "http://127.0.0.1:8770/contact/?view=original",
+        "h1": [],
+        "h1Count": 0,
+        "visibleH1Count": 0,
+        "expectedH1": "Request an Arc Guard Site Walkthrough",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 3,
+        "visibleMedia": 3,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "contact",
+      "variant": "enhanced",
+      "viewport": "desktop",
+      "viewportSize": "1440x1200",
+      "screenshot": "contact-enhanced-desktop.png",
+      "metrics": {
+        "title": "Request a Welding Connector Safety Walkthrough | Arc Guard™",
+        "finalUrl": "http://127.0.0.1:8770/contact/?view=enhanced",
+        "h1": [
+          "Request an Arc Guard Site Walkthrough"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Request an Arc Guard Site Walkthrough",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 3,
+        "visibleMedia": 3,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "contact",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": null,
+          "productFaqPlacement": null,
+          "productCorrectedFaqAction": null,
+          "homeCarouselState": null,
+          "homeEmptyCarouselCollapsed": null,
+          "resourceImagePresentation": null,
+          "sourceMediaCount": 6,
+          "finalMediaCount": 6,
+          "sourceDocumentCount": 0,
+          "finalDocumentCount": 0,
+          "introTextFits": true
+        },
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+        "pageerror: Cannot read properties of undefined (reading 'setLocaleData')"
+      ],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "home",
+      "variant": "current",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "home-current-mobile.png",
+      "metrics": {
+        "title": "Arc Guard™ arc flash safety device for welding connectorsHome - Arc Guard Inc.",
+        "finalUrl": "http://127.0.0.1:8770/?view=original",
+        "h1": [],
+        "h1Count": 0,
+        "visibleH1Count": 0,
+        "expectedH1": "A Patented Safety Retrofit for Welding Lead Connectors",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 6,
+        "visibleMedia": 6,
+        "brokenImages": [],
+        "horizontalOverflow": true,
+        "overflowPixels": 352,
+        "horizontalOutliers": [
+          {
+            "tag": "h2",
+            "className": "elementor-heading-title elementor-size-default",
+            "text": "THE PROBLEM — ARC FLASH & DROPPED OBJECTS",
+            "rect": {
+              "left": 22,
+              "right": 412,
+              "width": 390
+            }
+          },
+          {
+            "tag": "p",
+            "className": "e-b233a26-7461198 e-paragraph-base",
+            "text": "Get a focused walkthrough of how Arc Guard™ can help reduce connector‑related hazards at your facili",
+            "rect": {
+              "left": 363,
+              "right": 509,
+              "width": 146
+            }
+          },
+          {
+            "tag": "a",
+            "className": "elementor-button elementor-button-link elementor-size-sm",
+            "text": "Schedule a consult",
+            "rect": {
+              "left": 509,
+              "right": 622,
+              "width": 114
+            }
+          },
+          {
+            "tag": "h3",
+            "className": "e-4ba2310-9a3f152 e-heading-base",
+            "text": "For Distributors & Channel Partners",
+            "rect": {
+              "left": 370,
+              "right": 492,
+              "width": 122
+            }
+          },
+          {
+            "tag": "p",
+            "className": "e-13f546e-c5d561a e-paragraph-base",
+            "text": "Explore becoming an authorized Arc Guard™ distributor for your region or customer base. Learn about ",
+            "rect": {
+              "left": 492,
+              "right": 583,
+              "width": 91
+            }
+          },
+          {
+            "tag": "a",
+            "className": "elementor-button elementor-button-link elementor-size-sm",
+            "text": "become a distributor",
+            "rect": {
+              "left": 583,
+              "right": 742,
+              "width": 158
+            }
+          }
+        ],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)",
+        "pageerror: Loading chunk 557 failed.\n(error: http://127.0.0.1:8770/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js)"
+      ],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": false,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": false
+    },
+    {
+      "page": "home",
+      "variant": "enhanced",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "home-enhanced-mobile.png",
+      "metrics": {
+        "title": "Welding Connector Safety Device | Arc Guard™",
+        "finalUrl": "http://127.0.0.1:8770/?view=enhanced",
+        "h1": [
+          "A Patented Safety Retrofit for Welding Lead Connectors"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "A Patented Safety Retrofit for Welding Lead Connectors",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 6,
+        "visibleMedia": 6,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "home",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": null,
+          "productFaqPlacement": null,
+          "productCorrectedFaqAction": null,
+          "homeCarouselState": "empty-collapsed",
+          "homeEmptyCarouselCollapsed": true,
+          "resourceImagePresentation": null,
+          "sourceMediaCount": 10,
+          "finalMediaCount": 10,
+          "sourceDocumentCount": 0,
+          "finalDocumentCount": 0,
+          "introTextFits": true
+        },
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+      ],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "product",
+      "variant": "current",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "product-current-mobile.png",
+      "metrics": {
+        "title": "Spring-Assisted Safety Cap for Welding Connectors | Arc Guard",
+        "finalUrl": "http://127.0.0.1:8770/products/?view=original",
+        "h1": [],
+        "h1Count": 0,
+        "visibleH1Count": 0,
+        "expectedH1": "Lock and Cover Welding Lead Connections with One Retrofit",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 4,
+        "visibleMedia": 4,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "product",
+      "variant": "enhanced",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "product-enhanced-mobile.png",
+      "metrics": {
+        "title": "Welding Lead Locking Sleeve & Connector Cover | Arc Guard™",
+        "finalUrl": "http://127.0.0.1:8770/products/?view=enhanced",
+        "h1": [
+          "Lock and Cover Welding Lead Connections with One Retrofit"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Lock and Cover Welding Lead Connections with One Retrofit",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 4,
+        "visibleMedia": 4,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "product",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": true,
+          "productFaqPlacement": true,
+          "productCorrectedFaqAction": true,
+          "homeCarouselState": null,
+          "homeEmptyCarouselCollapsed": null,
+          "resourceImagePresentation": null,
+          "sourceMediaCount": 7,
+          "finalMediaCount": 7,
+          "sourceDocumentCount": 2,
+          "finalDocumentCount": 2,
+          "introTextFits": true
+        },
+        "productChecks": {
+          "faqItems": 8,
+          "exactInstallationAnswer": true,
+          "removedCertifiedQuestion": true,
+          "removedArcFlashQuestion": true,
+          "removedDatasheetSentence": true,
+          "patentedLanguage": true,
+          "noPatentPending": true,
+          "prominentPatentEyebrow": true,
+          "prominentPatentHeroCopy": true
+        },
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "industries",
+      "variant": "current",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "industries-current-mobile.png",
+      "metrics": {
+        "title": "Welding Safety Solutions by Industry - Arc Guard Inc.",
+        "finalUrl": "http://127.0.0.1:8770/welding-safety-solutions-by-industries/?view=original",
+        "h1": [],
+        "h1Count": 0,
+        "visibleH1Count": 0,
+        "expectedH1": "Welding Connector Risk Controls by Industry",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 7,
+        "visibleMedia": 7,
+        "brokenImages": [],
+        "horizontalOverflow": true,
+        "overflowPixels": 310,
+        "horizontalOutliers": [
+          {
+            "tag": "h2",
+            "className": "elementor-heading-title elementor-size-default",
+            "text": "Built for the Jobs where Failure Isn't an Option",
+            "rect": {
+              "left": 10,
+              "right": 425,
+              "width": 415
+            }
+          },
+          {
+            "tag": "p",
+            "className": "e-15b7209-0a94cf0 e-paragraph-base",
+            "text": "— An engineered control for the industries that operate at the edge of electrical, thermal, and drop",
+            "rect": {
+              "left": 5,
+              "right": 417,
+              "width": 412
+            }
+          }
+        ],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": false,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": false
+    },
+    {
+      "page": "industries",
+      "variant": "enhanced",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "industries-enhanced-mobile.png",
+      "metrics": {
+        "title": "Industrial Welding Safety Applications | Arc Guard™",
+        "finalUrl": "http://127.0.0.1:8770/welding-safety-solutions-by-industries/?view=enhanced",
+        "h1": [
+          "Welding Connector Risk Controls by Industry"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Welding Connector Risk Controls by Industry",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 7,
+        "visibleMedia": 7,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "industries",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": null,
+          "productFaqPlacement": null,
+          "productCorrectedFaqAction": null,
+          "homeCarouselState": null,
+          "homeEmptyCarouselCollapsed": null,
+          "resourceImagePresentation": null,
+          "sourceMediaCount": 10,
+          "finalMediaCount": 10,
+          "sourceDocumentCount": 0,
+          "finalDocumentCount": 0,
+          "introTextFits": true
+        },
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+      ],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "resources",
+      "variant": "current",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "resources-current-mobile.png",
+      "metrics": {
+        "title": "Resources - Arc Guard Inc.",
+        "finalUrl": "http://127.0.0.1:8770/resources/?view=original",
+        "h1": [],
+        "h1Count": 0,
+        "visibleH1Count": 0,
+        "expectedH1": "Welding Connector Safety Resources",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 3,
+        "visibleMedia": 3,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "resources",
+      "variant": "enhanced",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "resources-enhanced-mobile.png",
+      "metrics": {
+        "title": "Welding Connector Safety Resources | Arc Guard™",
+        "finalUrl": "http://127.0.0.1:8770/resources/?view=enhanced",
+        "h1": [
+          "Welding Connector Safety Resources"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Welding Connector Safety Resources",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 3,
+        "visibleMedia": 3,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "resources",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": null,
+          "productFaqPlacement": null,
+          "productCorrectedFaqAction": null,
+          "homeCarouselState": null,
+          "homeEmptyCarouselCollapsed": null,
+          "resourceImagePresentation": true,
+          "sourceMediaCount": 6,
+          "finalMediaCount": 6,
+          "sourceDocumentCount": 0,
+          "finalDocumentCount": 0,
+          "introTextFits": true
+        },
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "about",
+      "variant": "current",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "about-current-mobile.png",
+      "metrics": {
+        "title": "Veteran-Owned Safety Company | Arc Guard Inc.",
+        "finalUrl": "http://127.0.0.1:8770/about/?view=original",
+        "h1": [
+          "About"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Built from Front-Line Welding Experience",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 4,
+        "visibleMedia": 4,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "about",
+      "variant": "enhanced",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "about-enhanced-mobile.png",
+      "metrics": {
+        "title": "About Arc Guard™ | Welding Connector Safety Innovation",
+        "finalUrl": "http://127.0.0.1:8770/about/?view=enhanced",
+        "h1": [
+          "Built from Front-Line Welding Experience"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Built from Front-Line Welding Experience",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 4,
+        "visibleMedia": 4,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "about",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": null,
+          "productFaqPlacement": null,
+          "productCorrectedFaqAction": null,
+          "homeCarouselState": null,
+          "homeEmptyCarouselCollapsed": null,
+          "resourceImagePresentation": null,
+          "sourceMediaCount": 7,
+          "finalMediaCount": 7,
+          "sourceDocumentCount": 0,
+          "finalDocumentCount": 0,
+          "introTextFits": true
+        },
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "contact",
+      "variant": "current",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "contact-current-mobile.png",
+      "metrics": {
+        "title": "Welding Safety Assessment | Contact Arc Guard Inc.",
+        "finalUrl": "http://127.0.0.1:8770/contact/?view=original",
+        "h1": [],
+        "h1Count": 0,
+        "visibleH1Count": 0,
+        "expectedH1": "Request an Arc Guard Site Walkthrough",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": false,
+        "contentMedia": 3,
+        "visibleMedia": 3,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": null,
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [
+        "console: Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+      ],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    },
+    {
+      "page": "contact",
+      "variant": "enhanced",
+      "viewport": "mobile",
+      "viewportSize": "390x844",
+      "screenshot": "contact-enhanced-mobile.png",
+      "metrics": {
+        "title": "Request a Welding Connector Safety Walkthrough | Arc Guard™",
+        "finalUrl": "http://127.0.0.1:8770/contact/?view=enhanced",
+        "h1": [
+          "Request an Arc Guard Site Walkthrough"
+        ],
+        "h1Count": 1,
+        "visibleH1Count": 1,
+        "expectedH1": "Request an Arc Guard Site Walkthrough",
+        "expectedPageMarkup": true,
+        "enhancedBodyClass": true,
+        "contentMedia": 3,
+        "visibleMedia": 3,
+        "brokenImages": [],
+        "horizontalOverflow": false,
+        "overflowPixels": 0,
+        "horizontalOutliers": [],
+        "robots": "noindex,nofollow,noarchive,nosnippet",
+        "audit": {
+          "route": "contact",
+          "mediaParity": true,
+          "injectedMediaOverlaps": [],
+          "horizontalOverflow": false,
+          "productAssemblyCentered": null,
+          "productFaqPlacement": null,
+          "productCorrectedFaqAction": null,
+          "homeCarouselState": null,
+          "homeEmptyCarouselCollapsed": null,
+          "resourceImagePresentation": null,
+          "sourceMediaCount": 6,
+          "finalMediaCount": 6,
+          "sourceDocumentCount": 0,
+          "finalDocumentCount": 0,
+          "introTextFits": true
+        },
+        "productChecks": null,
+        "responseStatus": 200,
+        "responseHeaders": {
+          "cacheControl": "no-store",
+          "pragma": "",
+          "expires": "0"
+        }
+      },
+      "browserErrors": [],
+      "assertions": {
+        "correctSourceMarkup": true,
+        "correctVariantScope": true,
+        "enhancedH1Exact": true,
+        "noHorizontalOverflow": true,
+        "mediaPresent": true,
+        "noBrokenImages": true,
+        "previewNoindex": true,
+        "previewNoCache": true,
+        "runtimeMediaParity": true,
+        "mediaContainment": true,
+        "noInjectedMediaOverlap": true,
+        "routeSpecificAudit": true,
+        "productFaqExact": true,
+        "introTextFits": true
+      },
+      "pass": true
+    }
+  ],
+  "browserEventPolicy": "Console/page events from current public WordPress, Elementor, embeds, and upstream preview-proxy resources are preserved per render as non-gating observations. The pass gate uses deterministic markup, scope, H1, overflow, media, noindex/no-cache, containment/connectivity, overlap, route-specific, and exact FAQ assertions.",
+  "supplementalFinalAudit": {
+    "generatedAt": "2026-07-20T22:23:13.437Z",
+    "method": "Fresh final-code enhanced runtime pass at both 1440x1200 and 390x844 after final screenshots; checks introTextFits, media containment/connectivity, overlap, overflow, exact H1, Product patent eyebrow+hero copy, and response no-cache.",
+    "checks": [
+      {
+        "page": "home",
+        "viewport": "desktop",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "A Patented Safety Retrofit for Welding Lead Connectors"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "product",
+        "viewport": "desktop",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "Lock and Cover Welding Lead Connections with One Retrofit"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "industries",
+        "viewport": "desktop",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "Welding Connector Risk Controls by Industry"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "resources",
+        "viewport": "desktop",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "Welding Connector Safety Resources"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "about",
+        "viewport": "desktop",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "Built from Front-Line Welding Experience"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "contact",
+        "viewport": "desktop",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "Request an Arc Guard Site Walkthrough"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "home",
+        "viewport": "mobile",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "A Patented Safety Retrofit for Welding Lead Connectors"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "product",
+        "viewport": "mobile",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "Lock and Cover Welding Lead Connections with One Retrofit"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "industries",
+        "viewport": "mobile",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "Welding Connector Risk Controls by Industry"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "resources",
+        "viewport": "mobile",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "Welding Connector Safety Resources"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "about",
+        "viewport": "mobile",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "Built from Front-Line Welding Experience"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      },
+      {
+        "page": "contact",
+        "viewport": "mobile",
+        "introTextFits": true,
+        "mediaParity": true,
+        "mediaNodesPreserved": true,
+        "overlaps": [],
+        "overflow": false,
+        "h1": [
+          "Request an Arc Guard Site Walkthrough"
+        ],
+        "patent": true,
+        "cacheControl": "no-store"
+      }
+    ]
+  }
+}
