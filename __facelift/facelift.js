@@ -137,6 +137,7 @@
   ];
 
   const normalizePath = pathname => {
+    pathname = pathname.replace(/^\/ag-facelift-review/, '') || '/';
     if (pathname === '/') return pathname;
     return pathname.endsWith('/') ? pathname : `${pathname}/`;
   };
