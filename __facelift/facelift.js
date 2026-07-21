@@ -1,6 +1,15 @@
 (() => {
   'use strict';
 
+  // Resolve the site root from this script's own URL so injected internal
+  // links work on the origin root (production, local proxy) and on subpath
+  // hosts like GitHub Pages (/ag-facelift-review/...).
+  const SITE_ROOT = (document.currentScript?.src || '').replace(
+    /\/(?:__facelift|wp-content\/plugins\/arcguard-facelift\/assets)\/facelift\.js.*$/,
+    ''
+  );
+  const siteHref = path => (path.startsWith('/') ? `${SITE_ROOT}${path}` : path);
+
   const PAGE_CONFIG = {
     '/': {
       key: 'home',
@@ -211,6 +220,9 @@
   };
 
   document.body.classList.add('agfx-facelift', `agfx-page-${config.key}`);
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  }
   document.body.dataset.agfxPage = config.key;
 
   const ensureMeta = (name, value) => {
@@ -479,8 +491,8 @@
         <div class="agfx-intro__side">
           <p class="agfx-intro__lede">${config.lede}</p>
           <div class="agfx-actions">
-            <a class="agfx-button agfx-magnet" href="${config.primary[1]}">${config.primary[0]}</a>
-            <a class="agfx-button agfx-button--secondary" href="${config.secondary[1]}">${config.secondary[0]}</a>
+            <a class="agfx-button agfx-magnet" href="${siteHref(config.primary[1])}">${config.primary[0]}</a>
+            <a class="agfx-button agfx-button--secondary" href="${siteHref(config.secondary[1])}">${config.secondary[0]}</a>
           </div>
         </div>
       </div>`;
@@ -751,6 +763,72 @@
     document.head.append(schema);
   };
 
+  const injectFaqNavLink = () => {
+    const menus = document.querySelectorAll('ul#primary-menu, nav#mainnav ul.menu, nav#mainnav ul.sydney-dropdown-ul');
+    for (const menu of menus) {
+      if (menu.querySelector('.agfx-nav-faq')) continue;
+      const items = [...menu.children].filter(li => li.tagName === 'LI' && li.querySelector('a[href]'));
+      const template =
+        items.find(li => /\/contact\/?$/i.test(li.querySelector('a')?.getAttribute('href') || '')) ||
+        items[items.length - 1];
+      if (!template) continue;
+      const clone = template.cloneNode(true);
+      clone.removeAttribute('id');
+      clone.querySelectorAll('ul, .sub-menu, button').forEach(el => el.remove());
+      clone.className = `${clone.className.replace(/current[-\w]*/g, '').trim()} agfx-nav-faq`;
+      const anchor = clone.querySelector('a');
+      if (!anchor) continue;
+      anchor.setAttribute('href', siteHref('/products/#arcguard-faq'));
+      anchor.textContent = 'FAQ';
+      anchor.removeAttribute('aria-current');
+      template.after(clone);
+    }
+  };
+
+  const enhanceFooter = () => {
+    const footer = document.querySelector('#colophon');
+    if (!footer || footer.classList.contains('agfx-footer')) return;
+    footer.classList.add('agfx-footer');
+
+    const columns = footer.querySelectorAll('.shfb-main_footer_row .shfb-column');
+    const emptyColumns = [...columns].filter(column => !column.textContent.trim());
+
+    const quickLinks = document.createElement('div');
+    quickLinks.className = 'agfx-footer-block agfx-footer-links';
+    quickLinks.dataset.agfxInjected = 'footer-links';
+    quickLinks.innerHTML = `
+      <h3 class="widget-title">Explore</h3>
+      <ul>
+        <li><a href="${siteHref('/')}">Home</a></li>
+        <li><a href="${siteHref('/products/')}">Product</a></li>
+        <li><a href="${siteHref('/products/#arcguard-faq')}">FAQ</a></li>
+        <li><a href="${siteHref('/welding-safety-solutions-by-industries/')}">Industries</a></li>
+        <li><a href="${siteHref('/resources/')}">Resources</a></li>
+        <li><a href="${siteHref('/about/')}">About Us</a></li>
+        <li><a href="${siteHref('/contact/')}">Contact Us</a></li>
+      </ul>`;
+
+    const brand = document.createElement('div');
+    brand.className = 'agfx-footer-block agfx-footer-brand';
+    brand.dataset.agfxInjected = 'footer-brand';
+    brand.innerHTML = `
+      <h3 class="widget-title">Arc Guard™</h3>
+      <p class="agfx-footer-tagline">No Arc. No Drop. No Excuse.</p>
+      <p>A patented physical safeguard for welding lead connectors. U.S. Patent No. 12,671,212 B1.</p>
+      <a class="agfx-button agfx-footer-cta" href="${siteHref('/contact/')}">Request a Site Walkthrough</a>`;
+
+    if (emptyColumns.length >= 2) {
+      emptyColumns[0].append(quickLinks);
+      emptyColumns[1].append(brand);
+    } else {
+      const row = footer.querySelector('.shfb-main_footer_row .shfb-row') || footer;
+      row.append(quickLinks, brand);
+    }
+    for (const column of columns) {
+      if (!column.textContent.trim()) column.classList.add('agfx-footer-col-empty');
+    }
+  };
+
   const injectHomeFaqFeature = () => {
     if (config.key !== 'home' || document.querySelector('.agfx-home-faq')) return;
 
@@ -783,8 +861,8 @@
           )
           .join('')}</div>
         <div class="agfx-actions agfx-home-faq__actions">
-          <a class="agfx-button" href="/products/#arcguard-faq">See the Full FAQ</a>
-          <a class="agfx-button agfx-button--secondary" href="/contact/">Request a Site Walkthrough</a>
+          <a class="agfx-button" href="${siteHref('/products/#arcguard-faq')}">See the Full FAQ</a>
+          <a class="agfx-button agfx-button--secondary" href="${siteHref('/contact/')}">Request a Site Walkthrough</a>
         </div>
       </div>`;
 
@@ -820,8 +898,8 @@
         <h2>Connector fit, installation, and layered controls</h2>
         <p>Review the corrected Arc Guard FAQ, then use the existing articles below to examine connector condition, hot-work ignition scenarios, and equipment-cost consequences.</p>
         <div class="agfx-actions">
-          <a class="agfx-button" href="/products/#arcguard-faq">Review the Arc Guard FAQ</a>
-          <a class="agfx-button agfx-button--secondary" href="/products/">Review the connector design</a>
+          <a class="agfx-button" href="${siteHref('/products/#arcguard-faq')}">Review the Arc Guard FAQ</a>
+          <a class="agfx-button agfx-button--secondary" href="${siteHref('/products/')}">Review the connector design</a>
         </div>
       </div>`;
     const main = document.querySelector('#main.post-wrap, main');
@@ -1022,6 +1100,8 @@
   addProductDocumentState();
   injectFaq();
   injectHomeFaqFeature();
+  injectFaqNavLink();
+  enhanceFooter();
   injectResourceBridge();
   addRevealMotion(intro);
   addMagnetMotion();
