@@ -995,6 +995,13 @@
       anchor.textContent = 'FAQ';
       anchor.removeAttribute('aria-current');
       template.after(clone);
+
+      const check = clone.cloneNode(true);
+      check.className = check.className.replace('agfx-nav-faq', 'agfx-nav-selfcheck');
+      const checkAnchor = check.querySelector('a');
+      checkAnchor.setAttribute('href', '#compliance-check');
+      checkAnchor.textContent = 'Self-Check';
+      clone.after(check);
     }
   };
 
