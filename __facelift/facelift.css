@@ -2294,3 +2294,86 @@ body.agfx-facelift .agfx-resource-bridge {
 body.agfx-facelift {
   overflow-x: clip;
 }
+
+/* ===== Full-bleed: kill the boxed 1170px container on facelifted pages so
+   dark sections run edge-to-edge. Sections keep their own inner padding. ===== */
+body.agfx-facelift .content-wrapper.container {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+body.agfx-facelift .content-wrapper > .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+body.agfx-facelift .content-area {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+body.agfx-facelift #content,
+body.agfx-facelift .page-wrap {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Keep readable gutters inside the resources post grid now that its
+   container is full width. */
+body.agfx-facelift.agfx-page-resources #main.post-wrap {
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+/* ===== Homepage CTA columns: matched image sizes, aligned text and buttons. ===== */
+body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 {
+  align-items: stretch !important;
+}
+
+body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 > .e-con {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+body.agfx-facelift.agfx-page-home :where(.elementor-element-e231a56, .elementor-element-77cb5f6) img {
+  width: 100% !important;
+  height: clamp(240px, 22vw, 330px) !important;
+  margin-bottom: 1.25rem;
+}
+
+body.agfx-facelift.agfx-page-home .elementor-element-e231a56 img {
+  object-fit: cover;
+  object-position: center;
+}
+
+body.agfx-facelift.agfx-page-home .elementor-element-77cb5f6 img {
+  object-fit: contain;
+  background: #fff;
+  padding: 1.25rem;
+}
+
+body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 > .e-con > :last-child {
+  margin-top: auto;
+}
+
+/* Product documents group centered under the assembly demo. */
+body.agfx-facelift.agfx-page-product .elementor-element-6d3a201 {
+  justify-content: center;
+  text-align: center;
+  margin-inline: auto !important;
+}
+
+/* Full-bleed sections: Elementor boxes top-level containers to 1140px inside
+   a full-width cream wrapper — stretch them so dark sections run edge to edge. */
+body.agfx-facelift .elementor > .e-con,
+body.agfx-facelift .elementor > .elementor-section,
+body.agfx-facelift .elementor > .e-con > .e-con-inner,
+body.agfx-facelift .elementor > .elementor-section > .elementor-container {
+  width: 100% !important;
+  max-width: 100% !important;
+}

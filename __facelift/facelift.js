@@ -662,51 +662,14 @@
 
   const addProductDocumentState = () => {
     if (config.key !== 'product') return;
+    // Original document button labels and destinations stay untouched; the
+    // documents group is centered under the assembly demo via CSS.
     const faqLink = [...document.querySelectorAll('a[href]')].find(anchor =>
       /ArcGuard_FAQ|frequently.*asked/i.test(anchor.getAttribute('href') || '')
     );
-    const complianceLink = [...document.querySelectorAll('a[href]')].find(anchor =>
-      /compliance|standards/i.test(anchor.getAttribute('href') || '')
-    );
-
     if (faqLink) {
-      const legacyHref = faqLink.getAttribute('href') || '';
-      const label = faqLink.querySelector('.elementor-button-text') || faqLink;
-      label.textContent = 'Legacy FAQ PDF · unchanged';
       faqLink.dataset.agfxLegacyFaq = 'true';
-      faqLink.setAttribute(
-        'aria-label',
-        'Open the unchanged legacy FAQ PDF; review the corrected nine-question FAQ below'
-      );
-      window.__AGFX_AUDIT.legacyFaqHref = legacyHref;
-    }
-    if (complianceLink) {
-      const label = complianceLink.querySelector('.elementor-button-text') || complianceLink;
-      label.textContent = 'Technical Reference (review hold)';
-      complianceLink.setAttribute(
-        'aria-label',
-        'Open the existing compliance standards reference; citations and claims remain under review'
-      );
-    }
-
-    const documentGroup = document.querySelector('.elementor-element-6d3a201');
-    let reviewAction = document.querySelector('.agfx-faq-review-action');
-    if (documentGroup && !reviewAction) {
-      reviewAction = document.createElement('div');
-      reviewAction.className = 'agfx-faq-review-action';
-      reviewAction.dataset.agfxInjected = 'faq-review-action';
-      reviewAction.innerHTML = `
-        <a class="agfx-button" href="#arcguard-faq">Review Corrected FAQ Below</a>
-        <p>Nine corrected answers are displayed on this Product page. The legacy PDF destination remains unchanged for source comparison.</p>`;
-      documentGroup.after(reviewAction);
-    }
-
-    if (documentGroup && !document.querySelector('.agfx-document-note')) {
-      const note = document.createElement('p');
-      note.className = 'agfx-document-note';
-      note.textContent =
-        'Preview note: the legacy FAQ PDF and technical-reference destinations are preserved. The corrected nine-question HTML FAQ below is the client-review source of truth; the technical reference is not promoted as validated compliance guidance.';
-      (reviewAction || documentGroup).after(note);
+      window.__AGFX_AUDIT.legacyFaqHref = faqLink.getAttribute('href') || '';
     }
   };
 
@@ -732,16 +695,11 @@
       <div class="agfx-faq__inner">
         <header class="agfx-faq__head">
           <div>
-            <p class="agfx-section-label">Arc Guard™ FAQ · Corrected client draft</p>
+            <p class="agfx-section-label">Arc Guard™ FAQ</p>
             <h2 id="arcguard-faq-title">Frequently Asked Questions</h2>
           </div>
-          <p>All nine corrected answers appear directly on the Product page so buyers and field teams do not have to open a PDF.</p>
+          <p>Answers to the most common questions about fit, installation, and how Arc Guard™ supports your safety program.</p>
         </header>
-        <ul class="agfx-faq__status" aria-label="FAQ draft updates included">
-          <li><strong>Patented</strong><span>Current product status reflected</span></li>
-          <li><strong>9 questions</strong><span>Obsolete questions removed</span></li>
-          <li><strong>Installation updated</strong><span>Phillips-head screwdriver guidance included</span></li>
-        </ul>
         <div class="agfx-faq__list">${questions}</div>
         <div class="agfx-faq__notice">
           <strong>Product information notice</strong>
@@ -1231,7 +1189,6 @@
       const faq = document.querySelector('#arcguard-faq');
       const closing = document.querySelector('.elementor-element-8837c40');
       const legacyFaq = document.querySelector('[data-agfx-legacy-faq="true"]');
-      const correctedFaqAction = document.querySelector('.agfx-faq-review-action a[href="#arcguard-faq"]');
 
       if (assembly && mediaRail) {
         const assemblyRect = assembly.getBoundingClientRect();
@@ -1252,9 +1209,7 @@
       }
 
       productCorrectedFaqAction = Boolean(
-        legacyFaq &&
-          correctedFaqAction &&
-          legacyFaq.getAttribute('href') === window.__AGFX_AUDIT.legacyFaqHref
+        legacyFaq && legacyFaq.getAttribute('href') === window.__AGFX_AUDIT.legacyFaqHref
       );
     }
 
