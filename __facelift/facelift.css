@@ -2377,3 +2377,100 @@ body.agfx-facelift .elementor > .elementor-section > .elementor-container {
   width: 100% !important;
   max-width: 100% !important;
 }
+
+/* ===== Mobile fixes (client-reported flaws) ===== */
+
+/* Touch devices: reveal/split-text motion can freeze mid-state on iOS —
+   force everything fully visible regardless of body motion state. */
+@media (hover: none), (pointer: coarse) {
+  body.agfx-facelift .agfx-word,
+  body.agfx-facelift .agfx-reveal,
+  body.agfx-facelift.agfx-motion-ready .agfx-reveal:not(.is-visible),
+  body.agfx-facelift.agfx-motion-ready .agfx-intro:not(.is-visible) .agfx-word {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+    filter: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Home CTA columns: kill stray Elementor offsets, align everything left,
+     tighten the rhythm, keep imagery compact. */
+  body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 {
+    gap: 2.25rem;
+  }
+
+  body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 :where(.elementor-widget-heading, .elementor-widget-text-editor, h2, h3, p) {
+    margin: 0 0 0.85rem !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+
+  body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 img {
+    height: 210px !important;
+    margin-bottom: 1rem;
+  }
+
+  body.agfx-facelift.agfx-page-home .elementor-element-77cb5f6 img {
+    padding: 0.85rem;
+  }
+
+  body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 .agfx-button,
+  body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 :where(.elementor-button, .roll-button) {
+    width: 100%;
+  }
+
+  /* Industries cards: collapse desktop min-heights and loosen-spacing so the
+     cards read as one tight block. */
+  body.agfx-facelift.agfx-page-industries .e-con,
+  body.agfx-facelift.agfx-page-industries .e-con-inner {
+    min-height: 0 !important;
+  }
+
+  body.agfx-facelift.agfx-page-industries :where(h2, h3, h4) {
+    margin-block: 0.6rem !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  body.agfx-facelift.agfx-page-industries :where(.elementor-widget-heading, .elementor-widget-text-editor) {
+    margin-block: 0.4rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 .elementor-widget {
+    --width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Home CTA on mobile: Elementor atomic paragraphs/headings self-center at
+   intrinsic width — stretch and left-align them. */
+@media (max-width: 767px) {
+  body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 .e-con > :where(p, h2, h3, .e-paragraph-base, .e-heading-base) {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-self: stretch !important;
+    margin: 0 0 0.85rem !important;
+    text-align: left !important;
+  }
+}
+
+/* About (adversarial finding): the theme's sidebar layout pads post-wrap 30px
+   on the right at >=992px, leaving a cream strip beside dark sections. */
+body.agfx-facelift.agfx-page-about #main.post-wrap,
+body.agfx-facelift.agfx-page-about .post-wrap {
+  padding: 0 !important;
+}
+
+/* About: center the black banner image instead of hugging the left edge. */
+body.agfx-facelift.agfx-page-about .elementor-14346 .elementor-element-23097aa {
+  justify-content: center !important;
+}
+
+body.agfx-facelift.agfx-page-about .elementor-element-23097aa img {
+  margin-inline: auto !important;
+}

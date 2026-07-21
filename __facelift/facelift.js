@@ -1103,7 +1103,11 @@
     ].filter(Boolean);
     candidates.forEach(element => element.classList.add('agfx-reveal'));
 
-    if (reduced || !('IntersectionObserver' in window)) {
+    // Touch devices (iOS Safari especially) can freeze the scroll-reveal
+    // mid-state — leaving invisible text and half-revealed word masks. Motion
+    // stays a desktop-pointer enhancement only.
+    const touchDevice = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+    if (reduced || touchDevice || !('IntersectionObserver' in window)) {
       candidates.forEach(element => element.classList.add('is-visible'));
       return;
     }
