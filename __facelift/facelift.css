@@ -2215,3 +2215,66 @@ body.agfx-facelift.agfx-page-home :where(.elementor-element-e231a56, .elementor-
 body.agfx-facelift.agfx-page-home :where(.elementor-element-e231a56, .elementor-element-77cb5f6) img {
   height: auto !important;
 }
+
+/* Resources dropdown housing the Self-Check subpage entry. */
+body.agfx-facelift #site-navigation .agfx-has-subnav {
+  position: relative;
+}
+
+body.agfx-facelift #site-navigation .agfx-subnav {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50% 8px;
+  z-index: 9999;
+  min-width: 240px;
+  margin: 0;
+  padding: 0.4rem 0;
+  list-style: none;
+  background: #0d0c0b;
+  border-top: 3px solid var(--agfx-red);
+  box-shadow: 0 24px 48px -20px rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 180ms ease, translate 180ms ease, visibility 180ms;
+}
+
+body.agfx-facelift #site-navigation .agfx-has-subnav:hover .agfx-subnav,
+body.agfx-facelift #site-navigation .agfx-has-subnav:focus-within .agfx-subnav {
+  opacity: 1;
+  visibility: visible;
+  translate: -50% 0;
+}
+
+body.agfx-facelift #site-navigation .agfx-subnav li {
+  display: block;
+}
+
+body.agfx-facelift #site-navigation .agfx-subnav a {
+  display: block;
+  padding: 0.7rem 1.2rem;
+  color: var(--agfx-cream) !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+
+body.agfx-facelift #site-navigation .agfx-subnav a:hover {
+  background: var(--agfx-red);
+  color: #fff !important;
+}
+
+/* Mobile offcanvas: render the subnav as an indented nested list. */
+body.agfx-facelift #mainnav .agfx-subnav {
+  margin: 0;
+  padding: 0 0 0 1.1rem;
+  list-style: none;
+}
+
+body.agfx-facelift #mainnav .agfx-subnav a {
+  display: block;
+  padding: 0.45rem 0;
+  font-size: 0.92rem;
+  opacity: 0.85;
+}

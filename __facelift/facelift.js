@@ -996,12 +996,19 @@
       anchor.removeAttribute('aria-current');
       template.after(clone);
 
-      const check = clone.cloneNode(true);
-      check.className = check.className.replace('agfx-nav-faq', 'agfx-nav-selfcheck');
-      const checkAnchor = check.querySelector('a');
-      checkAnchor.setAttribute('href', '#compliance-check');
-      checkAnchor.textContent = 'Self-Check';
-      clone.after(check);
+      // Self-Check lives under Resources as a dropdown subpage entry.
+      const resourcesItem = items.find(li =>
+        /\/resources\/?$/i.test(new URL(li.querySelector('a')?.getAttribute('href') || '/', window.location.href).pathname)
+      );
+      if (resourcesItem && !resourcesItem.querySelector('.agfx-subnav')) {
+        resourcesItem.classList.add('agfx-has-subnav');
+        const subnav = document.createElement('ul');
+        subnav.className = 'agfx-subnav';
+        subnav.innerHTML = `
+          <li><a class="agfx-nav-selfcheck" href="${siteHref('/resources/')}#compliance-check">Compliance Self-Check</a></li>
+          <li><a href="${siteHref('/products/')}#arcguard-faq">Product FAQ</a></li>`;
+        resourcesItem.append(subnav);
+      }
     }
   };
 
