@@ -2168,3 +2168,50 @@ body.agfx-facelift.agfx-facelift.agfx-facelift.agfx-facelift.agfx-facelift :wher
 body.agfx-facelift.agfx-facelift.agfx-facelift.agfx-facelift.agfx-facelift :where(.elementor-button, .roll-button, .wp-block-button__link, .agfx-button):not(.agfx-button--secondary) :where(span, .elementor-button-text, .elementor-button-content-wrapper, i) {
   color: #fff !important;
 }
+
+/* Header CTA joins the primary button family: gradient, white italic label,
+   magnet hover (class added in JS), brightness lift. */
+body.agfx-facelift .shfb-component-button .button,
+body.agfx-facelift .shfb-component-button2 .button {
+  border: 1px solid #fff !important;
+  border-radius: 3px !important;
+  background: linear-gradient(180deg, #e30808 0%, #c00000 55%, #7a0202 100%) !important;
+  box-shadow: 0 12px 24px -14px rgba(178, 24, 28, 0.65);
+  color: #fff !important;
+  font-style: italic !important;
+  font-weight: 620 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.09em;
+  transition: filter 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+body.agfx-facelift .shfb-component-button .button:hover,
+body.agfx-facelift .shfb-component-button2 .button:hover {
+  filter: brightness(1.25);
+  color: #fff !important;
+}
+
+/* Home CTA columns: Elementor atomic columns collapse to 20px and let the
+   heading spill over the partner-logos image at mid widths. Give the section
+   real flow at every width. */
+body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 {
+  flex-wrap: wrap !important;
+  align-items: flex-start !important;
+  gap: 2.5rem;
+}
+
+body.agfx-facelift.agfx-page-home .elementor-element-ffcb8a8 > .e-con {
+  flex: 1 1 440px !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+body.agfx-facelift.agfx-page-home :where(.elementor-element-e231a56, .elementor-element-77cb5f6),
+body.agfx-facelift.agfx-page-home :where(.elementor-element-e231a56, .elementor-element-77cb5f6) * {
+  max-width: 100% !important;
+}
+
+body.agfx-facelift.agfx-page-home :where(.elementor-element-e231a56, .elementor-element-77cb5f6) img {
+  height: auto !important;
+}

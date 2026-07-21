@@ -1326,6 +1326,9 @@
   enhanceFooter();
   injectResourceBridge();
   injectAssessment();
+  for (const headerCta of document.querySelectorAll('.shfb-component-button .button, .shfb-component-button2 .button')) {
+    headerCta.classList.add('agfx-magnet');
+  }
   addRevealMotion(intro);
   addMagnetMotion();
 
