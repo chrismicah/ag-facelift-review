@@ -70,6 +70,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=sydney-style-min-inline-css */
 </style>
 <link rel='stylesheet' id='sydney-style-css' href='https://www.arcguardinc.com/wp-content/themes/sydney/style.css?ver=20230821' media='all' />
+<link rel='stylesheet' id='arcguard-facelift-css' href='https://www.arcguardinc.com/wp-content/plugins/arcguard-facelift/assets/facelift.css?ver=1.0.0' media='all' />
 <script id="jquery-core-js" src="https://www.arcguardinc.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
 <script id="jquery-migrate-js" src="https://www.arcguardinc.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
 <script id="nfd-wonder-blocks-utilities-js-after">
@@ -93,7 +94,7 @@ gtag("config", "GT-WPL27JSD");
 <link rel="https://api.w.org/" href="https://www.arcguardinc.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.arcguardinc.com/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 7.0.2" />
 <meta name="generator" content="Site Kit by Google 1.183.0" /><!-- HubSpot WordPress Plugin v11.3.65: embed JS disabled as a portalId has not yet been configured -->	<style>img#wpstats{display:none}</style>
-		<link rel="preconnect" href="//fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><meta name="google-site-verification" content="59LVEkxal-bqMVpMBkfznAFFaEYhgTaItLEfUfr-zOc"><meta name="generator" content="Elementor 4.1.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+		<link rel="preconnect" href="//fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><meta name="google-site-verification" content="59LVEkxal-bqMVpMBkfznAFFaEYhgTaItLEfUfr-zOc"><meta name="generator" content="Elementor 4.2.0; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
 			<style>
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
@@ -163,8 +164,8 @@ body.custom-background { background-color: #767575; }
     <!-- Local Arc Guard facelift preview; never published upstream. -->
     <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
     <meta name="arcguard-preview-mode" content="enhanced">
-    <link rel="stylesheet" href="https://chrismicah.github.io/ag-facelift-review/__facelift/facelift.css?v=1784599551">
-    <script src="https://chrismicah.github.io/ag-facelift-review/__facelift/facelift.js?v=1784599551" defer></script>
+    <link rel="stylesheet" href="https://chrismicah.github.io/ag-facelift-review/__facelift/facelift.css?v=1784600598">
+    <script src="https://chrismicah.github.io/ag-facelift-review/__facelift/facelift.js?v=1784600598" defer></script>
   </head>
 
 <body class="blog custom-background wp-theme-sydney menu-inline syd-has-blocks has-shfb-builder elementor-default elementor-kit-14041" >
@@ -688,30 +689,32 @@ body.custom-background { background-color: #767575; }
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/sydney/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 			<script>
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-						entries.forEach( ( entry ) => {
-							if ( entry.isIntersecting ) {
-								let lazyloadBackground = entry.target;
-								if( lazyloadBackground ) {
-									lazyloadBackground.classList.add( 'e-lazyloaded' );
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
 								}
-								lazyloadBackgroundObserver.unobserve( entry.target );
-							}
-						});
-					}, { rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-						lazyloadBackgroundObserver.observe( lazyloadBackground );
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
 					} );
-				};
-				const events = [
-					'DOMContentLoaded',
-					'elementor/lazyload/observe',
-				];
-				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
-				} );
+				} )();
 			</script>
 			<style id="core-block-supports-inline-css">
 .wp-elements-8f59581cdb6f0b78e82b90820afe416c a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-9ae55ede8afd81c9f9a461cdfbf185b5 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-f7502d188411358b62021452160dab03 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-00a036278e3615c4441d0f98f11f15a2 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-d4d67e7698b31eb7264e76ce66347f27 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-dc9989762fbef4d7f26845cc61eeaebc a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-e0cc916ddd4b2e793a8370df9c6e1828 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-2f4fb82d467356c18800ffefaeca2fc9 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-79c7719625ff8fbaa610a858f1cd8b30 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-f00acb383895f52df145dcdef12b7f7f a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-a2150dd4379333d8993fb8ad8662a7f9 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-cbe3c157299c7b0c9e6948bf62019aba a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-ebcf36fc8fdf34eda1b958a6a9c1dc68 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-2e4ce12a6e55d69794cb41157412473f a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-a2cb7639770956131c29c4b3c96b9d78 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-733443c135909c762a305fbf10ef8d53 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-919e8caa7a0401962b914709d5b2af26 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-444a7f0056d2691e9fb8e8cbd463120d a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-56a743c416cb12c23cd510fb79beed1e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-05a16277f26f4e9042c7bad13801bf4e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-3dc265e6dd0c3d2e53d04c249e1dafab a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-a47237f0ac26401ad23919d15e7f659d a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-678fba5a9de0e226985ced8a14882cb5 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-4f58e4d786d31bc4f50c9afbba9e6cbe a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-d6467243c127a8aa04c8864e28743ed7 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-e341cdfd0595193da73744e4499edd63 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-f1dc2c9a70fe0237f7dc8fdb9e65e7a6 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-0aead22f4538d6934b15653777e7052e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-5b4e61373693a130f80a3f49c2d8a7c0 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-efa4e8d0aeacd34607e23f1fc290a0b1 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-7acdb9b1f89840dba60bcb6fc5f170c2 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-46d7f9b8dbdc3b5350cfb79b68c171cf a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-f3e03eb32015d1350ade2fb3024a066c a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-04ccee1c8a4986167c583918c0d8deb7 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-21c19905667020b920eefa70c8b8e41e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-187fb0d8392d36abafff0ebd90e8a3bd a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-6fe039970ab81bc218517786b54d4517 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-3c9d41329f3789c73fad1b8c4de449c1 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-6aeb87271bf6fc91fb6b1332768d0e6e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-5a1c9ae1d4f69e330dcda42da9379714 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-80e3fe06a59b0d393f5586c3ff1d1461 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-d9ceb1036a6ba806a96cb0bff155fa8a a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-49d6d6d0defee841731e5612a1361acb a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-667e5a33c87a505daf2cf6c7781e48e1 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-3c68f61970759702ac76548c87d7e173 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-ab1178b0426ae799473d2b34f9b901ea a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-ef7022ca4ca94b73f1c691e9d2677485 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-2aff0d80ef84f31e4b98dfe9570a3b86 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-b11b580f4c8cc904bfa42d9aba5a9f26 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-9d263fd4b9d586adc3e56ecc900233ae a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-083f9386a5a13ad9e38fd6909a9e6945 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-a9eb46c56d012b835e5c4d44101e2599 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-d91cd05b95a545a847ac21cb2366d1ec a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-b0fb02afe7106daebf3c844a9881a7fb a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-7db71cfa5189a5dc1e45a220b9cbd54d a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-318a41f0044d779718ce11ffb00bfda3 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-43488f014fd7a22f42a6b8fd9a7ff188 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-cfe6e6319bb81dc9cfd8b335a3b36f14 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-169a3111fbbbcba080ee553637042845 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-a473c92c6ef88a73ee1484c235695ec6 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-dbe43ea7bc6a35a0c5c91af51b0e7fec a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-febdde98f440bdedb48492347d030101 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-d2f77f3cd214342694a96c90d198a3fe a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-4a4ee083c98a80b8204618d56afae0e3 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-504f19ff3fa2dfb4f34b22e31a67c845 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-f1edabc617ca2e69330a7b35b902698b a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-874b88bd46bd20eb920d56e8ca13a222 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-b5153d802f0ad2798dc4c563a5b0a260 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-3e9a2175d053b8c15890cd5ab8827c3c a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-2d492e8253b44615e664e42aff781b5d a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-d7251e759ce628c33565fc78c35be626 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-9c1eef9bfa3d36fed55df780a742d6c7 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-cbd0b80ee8d0af89a8511bbbdee41d5a a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-ecd29ed0e7497d2844575e3c4108a893 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-842a9e01f4038c0f4f24130763602f23 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}.wp-elements-ad41c28ef06c285524a6b516e111a76a a:where(:not(.wp-element-button)){color:var(--wp--preset--color--global-color-6);}
@@ -743,6 +746,7 @@ var pum_popups = [];
 </script>
 <script id="popup-maker-site-js" src="https://www.arcguardinc.com/wp-content/uploads/pum/pum-site-scripts.js?defer&#038;generated=1782846440&#038;ver=1.23.0"></script>
 <script id="googlesitekit-events-provider-popup-maker-js" src="https://www.arcguardinc.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-popup-maker-7062bab628c801813984.js" defer></script>
+<script id="arcguard-facelift-js" src="https://www.arcguardinc.com/wp-content/plugins/arcguard-facelift/assets/facelift.js?ver=1.0.0"></script>
 <script id="jetpack-stats-js-before">
 _stq = window._stq || [];
 _stq.push([ "view", {"v":"ext","blog":"255523667","post":"14044","tz":"0","srv":"www.arcguardinc.com","j":"1:16.0.1"} ]);

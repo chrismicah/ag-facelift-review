@@ -2278,3 +2278,19 @@ body.agfx-facelift #mainnav .agfx-subnav a {
   font-size: 0.92rem;
   opacity: 0.85;
 }
+
+/* Live-theme safety: never let fixed-width containers or injected sections
+   push past the viewport (the Sydney .container is fixed 1170px and the real
+   theme shifts it at some window sizes). */
+body.agfx-facelift .content-wrapper.container {
+  width: min(1170px, 100%) !important;
+  margin-inline: auto !important;
+}
+
+body.agfx-facelift .agfx-resource-bridge {
+  max-width: 100%;
+}
+
+body.agfx-facelift {
+  overflow-x: clip;
+}
