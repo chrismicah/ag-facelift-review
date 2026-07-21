@@ -1083,7 +1083,7 @@
       <div class="agfx-resource-bridge__inner">
         <p class="agfx-section-label">Start with the field questions</p>
         <h2>Connector fit, installation, and layered controls</h2>
-        <p>Review the corrected Arc Guard FAQ, then use the existing articles below to examine connector condition, hot-work ignition scenarios, and equipment-cost consequences.</p>
+        <p>Review the Arc Guard FAQ, then use the articles below to examine connector condition, hot-work ignition scenarios, and equipment-cost consequences.</p>
         <div class="agfx-actions">
           <a class="agfx-button" href="${siteHref('/products/#arcguard-faq')}">Review the Arc Guard FAQ</a>
           <a class="agfx-button agfx-button--secondary" href="${siteHref('/products/')}">Review the connector design</a>
