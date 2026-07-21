@@ -237,33 +237,33 @@ body.agfx-facelift .agfx-actions {
   gap: 0.75rem;
 }
 
+/* Primary button language: the site's original black-to-red gradient with
+   white italic uppercase lettering and a thin white keyline — kept per client. */
 body.agfx-facelift .agfx-button,
 body.agfx-facelift :where(.elementor-button, .roll-button, .wp-block-button__link, input[type="submit"], button[type="submit"]) {
   display: inline-flex;
   min-height: 46px;
   align-items: center;
   justify-content: center;
-  padding: 0.86rem 1.25rem !important;
-  border: 1px solid var(--agfx-red) !important;
-  border-radius: 4px !important;
-  background: var(--agfx-red) !important;
-  background-image: none !important;
-  box-shadow: none !important;
+  padding: 0.9rem 1.6rem !important;
+  border: 1px solid #fff !important;
+  border-radius: 3px !important;
+  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(204, 0, 0) 100%) !important;
+  box-shadow: 0 10px 22px -14px rgba(0, 0, 0, 0.6);
   color: #fff !important;
   font-size: 0.88rem !important;
-  font-style: normal !important;
-  font-weight: 720 !important;
-  letter-spacing: 0.015em;
+  font-style: italic !important;
+  font-weight: 620 !important;
+  letter-spacing: 0.09em;
   line-height: 1.2;
   text-decoration: none !important;
-  text-transform: none !important;
-  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+  text-transform: uppercase !important;
+  transition: filter 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
 body.agfx-facelift .agfx-button:hover,
 body.agfx-facelift :where(.elementor-button, .roll-button, .wp-block-button__link, input[type="submit"], button[type="submit"]):hover {
-  border-color: var(--agfx-red-dark) !important;
-  background: var(--agfx-red-dark) !important;
+  filter: brightness(1.25);
   color: #fff !important;
 }
 
@@ -1480,41 +1480,44 @@ body.agfx-facelift .agfx-home-faq__actions {
   margin-top: 2rem;
 }
 
-/* Centering fixes: the product document buttons and FAQ review callout
-   squished side-by-side at tablet widths. Stack and center them below 1024px. */
-@media (max-width: 1024px) {
-  body.agfx-facelift.agfx-page-product .elementor-element-6d3a201 {
-    grid-template-columns: 1fr !important;
-    justify-items: center;
-  }
+/* The product document buttons and FAQ review callout sit in a column whose
+   width varies with the window; side-by-side layouts break at many in-between
+   sizes. Stack and center them at every width — no breakpoint edge cases. */
+body.agfx-facelift.agfx-page-product .elementor-element-6d3a201 {
+  grid-template-columns: 1fr !important;
+  justify-items: center;
+  row-gap: 0.85rem;
+}
 
-  body.agfx-facelift.agfx-page-product .elementor-element-6d3a201 :where(.elementor-button, .roll-button) {
-    width: min(100%, 420px);
-    text-align: center;
-  }
+body.agfx-facelift.agfx-page-product .elementor-element-6d3a201 :where(.elementor-button, .roll-button) {
+  width: min(100%, 420px);
+  text-align: center;
+}
 
-  body.agfx-facelift .agfx-faq-review-action {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+body.agfx-facelift .agfx-faq-review-action {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-  body.agfx-facelift .agfx-faq-review-action p {
-    max-width: 52ch;
-  }
+body.agfx-facelift .agfx-faq-review-action p {
+  max-width: 52ch;
+  margin-inline: auto;
+}
 
-  body.agfx-facelift .agfx-faq-review-action .agfx-button {
-    width: min(100%, 420px);
-    text-align: center;
-  }
+body.agfx-facelift .agfx-faq-review-action .agfx-button {
+  width: min(100%, 420px);
+  text-align: center;
+}
 
-  body.agfx-facelift .agfx-media-caption {
-    text-align: center;
-  }
+body.agfx-facelift .agfx-media-caption {
+  text-align: center;
+}
 
-  body.agfx-facelift .agfx-document-note {
-    text-align: center;
-  }
+body.agfx-facelift .agfx-document-note {
+  text-align: center;
+  margin-inline: auto;
 }
 
 /* Header CTA — stop the two-line wrap and center the label. */
